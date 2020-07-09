@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramico</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#intro" class="header__logo">Ceramico</a>
+            <nav class="header__nav">
+                <a href="#about" class="link header__link">About us</a>
+                <a href="#stat" class="link header__link">Statistics</a>
+                <a href="#products" class="link header__link">Products</a>
+                <a href="#team" class="link header__link">Our team</a>
+                <a href="#social" class="link header__link">Social</a>
+            </nav>
+            <button class="header__toggle">Menu</button>
+        </div>
+    </header>
+    <main class="main">
+        <section id="intro" class="intro">
+            <div class="container intro__container">
+                <h1 class="intro__title">Welcome<br> to<br> Ceramico</h1>
+                <p class="intro__text">Our pots and plates<br> for your cozy place</p>
+            </div>
+            <button class="intro__btn">Find out more</button>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/intro.jpg">
+                <img src="img/intro-mob.jpg" alt="Intro" class="intro__bg">
+            </picture>
+        </section>
+        <article>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <h2 class="title about__title">About us</h2>
+                    <h5 class="subtitle about__subtitle">And where we get inspiration from</h5>
+                    <p class="about__text">We meet each other in Chicago, the place where we found ourselves in
+                        ceramics.
+                        Inspired by nature, the natural elements like dirt, rocks, and sand, architecture both ancient
+                        and
+                        modern, our work has minimalist shapes and the raw materials bare so we never forget what they
+                        are
+                        made of.</p>
+                    <p class="about__text">You can be sure that we make pottery with a more meaningful story than
+                        ceramics
+                        that have been mass produced.</p>
+                </div>
+            </section>
+            <section class="statistics" id="stat">
+                <div class="container">
+                    <h2 class="title title--white statistics__title ">Some statistics</h2>
+                    <h5 class="subtitle subtitle--white statistics__subtitle">Since 2017 we have</h5>
+                    <ul class="statistics__list">
+                        <li class="statistics__stat">
+                            <b class="statistics__num">127</b>
+                            <span class="statistics__name">Ceramics sold</span>
+                        </li>
+                        <li class="statistics__stat">
+                            <b class="statistics__num">0</b>
+                            <span class="statistics__name">Broken plates</span>
+                        </li>
+                        <li class="statistics__stat">
+                            <b class="statistics__num">172</b>
+                            <span class="statistics__name">Happy customers</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="img/statistics.jpg" alt="Statistics" class="statistics__bg">
+            </section>
+            <section class="products" id="products">
+                <div class="container">
+                    <h2 class="title products__title">Featured products</h2>
+                    <h5 class="subtitle products__subtitle">For any table, shelf or windowsill</h5>
+                    <ul class="products__list">
+                        <li class="good products__item">
+                            <div class="good__thumb"><img src="img/catalog/ceramic (1).jpg" alt="" class="good__img">
+                            </div>
+                            <span class="good__name">Tiana</span>
+                            <span class="good__price">56</span>
+                            <a href="#" class="good__link">More</a>
+                        </li>
+                        <li class="good products__item">
+                            <div class="good__thumb"><img src="img/catalog/ceramic (2).jpg" alt="" class="good__img">
+                            </div>
+                            <span class="good__name">Frances</span>
+                            <span class="good__price">42</span>
+                            <a href="#" class="good__link">More</a>
+                        </li>
+                        <li class="good products__item">
+                            <div class="good__thumb"><img src="img/catalog/ceramic (3).jpg" alt="" class="good__img">
+                            </div>
+                            <span class="good__name">Itzel</span>
+                            <span class="good__price">30</span>
+                            <a href="#" class="good__link">More</a>
+                        </li>
+                    </ul>
+                    <button class="products__load">Load more</button>
+                </div>
+            </section>
+            <section class="team" id="team">
+                <div class="container">
+                    <h2 class="title team__title">Meet the team</h2>
+                    <h5 class="subtitle team__subtitle">People who make the magic happen</h5>
+                    <ul class="team__list">
+                        <li class="person team__person">
+                            <img src="img/jeff.JPG" alt="Jeff" class="person__photo">
+                            <span class="person__name">Jeff</span>
+                            <span class="person__job">Ceramist</span>
+                        </li>
+                        <li class="person team__person">
+                            <img src="img/ronald.JPG" alt="Ronald" class="person__photo">
+                            <span class="person__name">Ronald</span>
+                            <span class="person__job">Designer</span>
+                        </li>
+                        <li class="person team__person">
+                            <img src="img/garry.JPG" alt="Garry" class="person__photo">
+                            <span class="person__name">Garry</span>
+                            <span class="person__job">Ceramist</span>
+                        </li>
+                    </ul>
+                </div>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/team.jpg">
+                    <img src="img/team-mob.jpg" alt="Team" class="team__bg">
+                </picture>
+            </section>
+            <section class="social" id="social">
+                <div class="container social__container">
+                    <h2 class="title social__title">Photo#Social</h2>
+                    <h5 class="subtitle social__subtitle">Our ceramics in your life</h5>
+                    <ul class="social__list">
+                        <li class="social__photo">
+                            <a href="#" class="social__link">
+                                <img src="img/social/Photo by Annie Spratt on Unsplash.jpg" alt=""
+                                    class="social__thumb">
+                            </a>
+                        </li>
+                        <li class="social__photo">
+                            <a href="#" class="social__link">
+                                <img src="img/social/Photo by Robert Wiedemann on Unsplash.jpg" alt=""
+                                    class="social__thumb">
+                            </a>
+                        </li>
+                        <li class="social__photo">
+                            <a href="#" class="social__link">
+                                <img src="img/social/Photo by Cassidy Phillips on Unsplash.jpg" alt=""
+                                    class="social__thumb">
+                            </a>
+                        </li>
+                        <li class="social__photo">
+                            <a href="#" class="social__link">
+                                <img src="img/social/Photo by Lex Sirikiat on Unsplash.jpg" alt=""
+                                    class="social__thumb">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="social__note">Follow <a href="#" class="social__inst">@Ceramico</a><br> on Instagram</p>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__nav">
+                <a href="#about" class="link footer__link">About us</a>
+                <a href="#stat" class="link footer__link">Statistics</a>
+                <a href="#products" class="link footer__link">Products</a>
+                <a href="#team" class="link footer__link">Our team</a>
+                <a href="#social" class="link footer__link">Social</a>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="link footer__link">FAQ</a>
+                <a href="#" class="link footer__link">Terms & Conditions</a>
+            </div>
+            <div class="footer__socials">
+                <span class="footer__note">Let's get social!</span>
+                <ul class="footer__social-list">
+                    <a href="#" class="footer__social-link"><img src="img/twitter.svg" alt="twitter" width="20"></a>
+                    <a href="#" class="footer__social-link"><img src="img/facebook.svg" alt="facebook" width="9"></a>
+                    <a href="#" class="footer__social-link"><img src="img/instagram.svg" alt="instagram" width="20"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

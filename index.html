@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио. Эллина Ибрагимова</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <header class="menu">
+        <button class="menu__toggle"></button>
+        <nav class="navigation">
+            <a href="#about" class="navigation__item">Обо мне</a>
+            <a href="#skills" class="navigation__item">Навыки</a>
+            <a href="#portfolio" class="navigation__item">Портфолио</a>
+            <a href="#contacts" class="navigation__item">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <h1 class="intro__title">Я Ибрагимова Эллина<br> и это моё портфолио<br>
+                <span class="intro__highlight">Frontend разработчика</span></h1>
+        </div>
+        <div class="container">
+            <section id="about" class="section about">
+                <h2 class="title about__title">Немного обо мне</h2>
+                <p class="about__text">Выпускник, которому удалось совместить и учёбу в институте, и самообучение, при этом получая отличные результаты. Окончание учебы в институте для меня радостный момент, так как наконец появилась возможность окунуться в веб-разработку по полной. Изначально изучала тонкости вёрстки самостоятельно, но быстро поняла, что нужен настоящий, "живой" опыт. Несколько месяцев стажировки в компании с талантливыми людьми и настоящими проектами показали мне, насколько интересно трудиться в данной сфере, со всеми её оригинальными задачами и внезапными проблемами. Вместе с тем это вызов, который невозможно не принять! И какие приятные результаты получаются: смотришь назад и понимаешь, насколько ты вырос и как много открыл для себя.
+                </p>
+                <p class="about__text">Планирую и дальше развиваться в данной сфере и участвовать в работе, на результаты которой можно смотреть с гордостью. Мои интересы на данный момент: изучить React и научиться работать с CMS Wordpress.</p>
+            </section>
+            <section id="skills" class="section skills">
+                <h2 class="title skills__title">Мои навыки</h2>
+                <ul class="skills__list">
+                    <li class="skills__item item item--html">
+                        <h3 class="item__title">HTML</h3>
+                        <span class="item__point">Семантическая верстка</span>
+                        <span class="item__point">Валидный код</span>
+                        <span class="item__point">Методология <b>БЭМ</b> </span>
+
+                    </li>
+                    <li class="skills__item item item--css">
+                        <h3 class="item__title">CSS</h3>
+                        <span class="item__point">Структурированный код</span>
+                        <span class="item__point">Работа с <b>@media-запросами </b></span>
+                        <span class="item__point">Анимация элементов без JS</span>
+                    </li>
+                    <li class="skills__item item item--js">
+                        <h3 class="item__title">JavaScript</h3>
+                        <span class="item__point">Модульный подход</span>
+                        <span class="item__point">Использование <b>jQuery</b>  </span>
+                        <span class="item__point">API <b>Яндекс.Карты</b></span>
+                    </li>
+                    <li class="skills__item item item--preproc">
+                        <h3 class="item__title">Препроцессоры</h3>
+                        <span class="item__point">Быстрая стилизация сайта</span>
+                        <span class="item__point"> Вложенность селекторов без ошибок</span>
+                    </li>
+                    <li class="skills__item item item--instruments">
+                        <h3 class="item__title">Инструменты</h3>
+                        <span class="item__point">Опыт работы с <b>Git</b></span>
+                        <span class="item__point">Использование фреймворка <b>UIkit&nbsp3</b></span>
+                        <span class="item__point">Автоматизация процесса верстки c помощью <b>Gulp</b></span>
+                    </li>
+                    <li class="skills__item item item--other">
+                        <h3 class="item__title">Прочее</h3>
+                        <span class="item__point">Работа с <b>Photoshop</b> и <b>Figma</b> </span>
+                        <span class="item__point">Опыт работы с <b>Bitrix</b> (посадка простых страниц)</span>
+                        <span class="item__point">Работа с <b>SVG</b> : экспорт из макета,<br> создание спрайтов</span>
+                        
+                    </li>
+                </ul>
+            </section>
+            <section id="portfolio" class="section portfolio">
+                <h2 class="title portfolio__title">Портфолио</h2>
+                <ul class="portfolio__list">
+                    <li class="site portfolio__item">
+                        <a href="portfolio/dent/index.html" target="_blank">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/sites/Dent.jpg">
+                                <img src="img/sites/Dent-m.jpg" alt="Surf Club" class="site__thumb">
+                            </picture>
+                            <div class="site__description">
+                                <span class="site__name">Dent</span>
+                                <div class="site__info">
+                                    <span class="site__text">Bootstrap вёрстка</span>
+                                    <span class="site__text">Использование слайдера Swiper</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="site portfolio__item">
+                        <a href="portfolio/mishka/index.html" target="_blank">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/sites/Mishka.jpg">
+                                <img src="img/sites/Mishka-m.jpg" alt="Mishka" class="site__thumb">
+                            </picture>
+                            <div class="site__description">
+                                <span class="site__name">Mishka</span>
+                                <div class="site__info">
+                                    <span class="site__text">Использование SVG-спрайтов</span>
+                                    <span class="site__text">Слайдер отзывов на чистом JS</span>
+                                    <span class="site__text">Использование API Яндекс.Карты</span>
+                                    <span class="site__text">Валидация формы через HTML и JS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="site portfolio__item">
+                        <a href="portfolio/surfclub/index.html" target="_blank">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/sites/SurfClub.jpg">
+                                <img src="img/sites/SurfClub-m.jpg" alt="Surf Club" class="site__thumb">
+                            </picture>
+                            <div class="site__description">
+                                <span class="site__name">Surf Club</span>
+                                <div class="site__info">
+                                    <span class="site__text">Использование слайдера Owl Carousel</span>
+                                    <span class="site__text">Использование jQuery для навигации</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="site portfolio__item">
+                        <a href="portfolio/ceramico/index.html" target="_blank">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/sites/Ceramico.jpg">
+                                <img src="img/sites/Ceramico-m.jpg" alt="Ceramico" class="site__thumb">
+                            </picture>
+                            <div class="site__description">
+                                <span class="site__name">Ceramico</span>
+                                <div class="site__info">
+                                    <span class="site__text">Использование jQuery для навигации и <br>добавления товаров</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </section>
+        </div>
+    </main>
+    <div class="container">
+        <footer id="contacts" class="footer">
+            <div class="footer__container">
+                <p class="footer__credit">Эллина Ибрагимова, <span class="footer__date">2020</span> </p>
+                <div class="footer__contact">
+                    <p class="footer__line">Почта:
+                        <a href="mailto:ibragimowa.ellina@yandex.ru"
+                            class="footer__mail">ibragimowa.ellina@yandex.ru</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

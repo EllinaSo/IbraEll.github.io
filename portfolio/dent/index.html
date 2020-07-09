@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dent</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#80CEDB">
+</head>
+
+<body>
+
+    <header class="sticky-top header">
+        <div class="container  navbar navbar-expand-lg navbar-light">
+            <a href="/" class="navbar-brand header__logo">
+                <img src="img/logo.svg" alt="Dent">
+            </a>
+
+            <button class="navbar-toggler header__toggle" data-toggle="collapse" data-target="#header__nav" aria-label="Меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="header__nav">
+
+                <nav class="navbar-nav header__nav">
+                    <a href="#intro" class="nav-item nav-link active">Главная</a>
+                    <a class="nav-item nav-link" href="#services">Услуги</a>
+                    <a class="nav-item nav-link" href="#doctors">Врачи</a>
+                    <a class="nav-item nav-link" href="#about">О клинике</a>
+                    <a class="nav-item nav-link" href="#stocks">Акции</a>
+                    <a class="nav-item nav-link" href="#blog">Блог</a>
+                    <a class="nav-item nav-link" href="#contacts">Контакты</a>
+                </nav>
+                <a href="tel:+7(495)588-22-31" class="ml-auto icon icon--phone header__phone">+7 (495) 588-22-31</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="intro">
+            <div class="container  intro__content">
+                <h1 class="intro__title">Центр современной стоматологии</h1>
+                <h3 class="intro__slogan"> Здоровые зубы – <br>
+                    Залог долгой жизни</h3>
+                <button class="button button--main intro__button" data-toggle="modal"
+                    data-target="#callModal">Записаться на прием</button>
+                <div class="intro__cards">
+                    <div class="row">
+                        <div class="col-lg mb-3">
+                            <a class="card card--main" href="#stocks">
+                                <span>Акции</span>
+                                <p>Ознакомьтесь с выгодными акциями</p>
+                                <div class="card__icon"><img src="./img/tooth.svg"></div>
+                            </a>
+                        </div>
+                        <div class="col-lg mb-3">
+                            <a class="card card--main" href="#doctors">
+                                <span>Врачи</span>
+                                <p>Посмотрите наших специалистов</p>
+                                <div class="card__icon"><img src="./img/doctor.svg"></div>
+                            </a>
+                        </div>
+                        <div class="col-lg mb-3">
+                            <a class="card card--main" href="#about">
+                                <span>О центре</span>
+                                <p>Узнайте больше о месте вашего лечения</p>
+                                <div class="card__icon"><img src="./img/hospital.svg"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="container services">
+            <h2>Услуги</h2>
+            <div class="row row-cols-3 services__cards">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Диагностика</span>
+                        <p>Узнайте все о состоянии ваших зубов</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Лечение и эстетитка</span>
+                        <p>Восстановление и реставрация</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Протезирование</span>
+                        <p>Восстановление зубного ряда</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Ортодонтия</span>
+                        <p>Красивая улыбка с ранних лет</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Протезирование</span>
+                        <p>Поможет вернуть эстетическую красоту</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Имплантация</span>
+                        <p>Имплантация зубов любой сложности</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Чистка зубов</span>
+                        <p>Полная гигиента полости рта</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Паротондология</span>
+                        <p>Комплексная забота о деснах</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#" class="card card--dark">
+                        <span>Хирургия</span>
+                        <p>Безболезненное удаление</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors">
+            <div class="container doctors__container">
+                <h2>Наши специалисты</h2>
+                <div class="swiper-container slider doctors__slider">
+                    <div class="swiper-pagination slider__pagination doctors__pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide doctors__card">
+                            <div class="doctors__photo">
+
+                                <img src="img/pers.jpg" alt="Алиса Исаева">
+                            </div>
+                            <div class="doctors__body">
+                                <span>Алиса Исаева</span>
+                                <p>Ассистент</p>
+                                <a class="doctors__more" href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide doctors__card">
+                            <div class="doctors__photo">
+
+                                <img src="img/pres1.jpg" alt="Дмитрий Захаров">
+                            </div>
+                            <div class="doctors__body">
+                                <span>Дмитрий Захаров</span>
+                                <p>Главный врач, стоматолог-терапевт</p>
+                                <a class="doctors__more" href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide doctors__card">
+                            <div class="doctors__photo">
+
+                                <img src="img/pers2.jpg" alt="Федор Филиппов">
+                            </div>
+                            <div class="doctors__body">
+                                <span>Федор Филиппов</span>
+                                <p>Врач-стоматолог, Ортопед,
+                                    Имплантолог</p>
+                                <a class="doctors__more" href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide doctors__card">
+                            <div class="doctors__photo">
+
+                                <img src="img/pers3.jpg" alt="Светлана Дементьева">
+                            </div>
+                            <div class="doctors__body">
+                                <span>Светлана Дементьева</span>
+                                <p>Врач-ортодонт</p>
+                                <a class="doctors__more" href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide doctors__card">
+                            <div class="doctors__photo">
+
+                                <img src="img/pers3.jpg" alt="Елена Дементьева">
+                            </div>
+                            <div class="doctors__body">
+                                <span>Елена Дементьева</span>
+                                <p>Сестра врача-ортодонта</p>
+                                <a class="doctors__more" href="#">Перейти</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about__container">
+                <h2>О клинике</h2>
+                <img class="about__poster" src="img/about.jpg" alt="">
+                <div class="about__body">
+                    <div class="about__quote">
+                        <p>Наши стоматологи профессионалы своего дела! Все делают красиво и надежно – мастерски
+                            выполняют свою работу. В нашей клинике работают стоматологи с большим опытом и
+                            доктора
+                            всех специализаций!</p>
+                    </div>
+                    <div class="about__person">
+                        <p>Директор, Стоматолог-терапевт</p>
+                        <span>Егор<br>
+                            Контдратьев</span>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stocks" class="stocks">
+            <div class="container stocks__container">
+                <h2>Акции</h2>
+                <div class="swiper-container stocks__slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide stocks__slide">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="./img/stock-m.jpg">
+                                <img class="stocks__poster" src="./img/stock.jpg" alt="Имплантация + КТ ">
+                            </picture>
+                            <h3>Имплантация + КТ <br>
+                                Всего за 28 800 Рублей</h3>
+                            <p>Выгодное предложение для тех, кто задумался об имплантации</p>
+                            <button class="button stocks__button" data-toggle="modal"
+                                data-target="#callModal">Записаться на прием</button>
+
+                        </div>
+                        <div class="swiper-slide stocks__slide">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="./img/stock1-m.jpg">
+                                <img class="stocks__poster" src="./img/stock1.jpg" alt="Оставьте отзыв о докторе">
+                            </picture>
+                            <h3>Оставьте отзыв о докторе<br>
+                                И получите СКИДКУ 5%</h3>
+                            <p>На следующий прием</p>
+                            <button class="button stocks__button" data-toggle="modal"
+                                data-target="#callModal">Записаться на прием</button>
+
+                        </div>
+                        <div class="swiper-slide stocks__slide">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="./img/stock2-m.jpg">
+                                <img class="stocks__poster" src="./img/stock2.jpg" alt="Бесплатный осмотр">
+                            </picture>
+                            <h3>Бесплатный осмотр<br>Для новых клиентов
+                            </h3>
+                            <p>По записи онлайн</p>
+                            <button class="button stocks__button" data-toggle="modal"
+                                data-target="#callModal">Записаться на прием</button>
+
+                        </div>
+                    </div>
+                    <div class="swiper-pagination stocks__pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="container">
+                <h2>Блог</h2>
+                <div class="swiper-container slider blog__slider">
+
+                    <div class="swiper-pagination blog__pagination slider__pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news">
+
+                                <img class="news__poster" src="img/news0.jpg" alt="">
+                                <span class="news__date">21 августа 2019</span>
+                                <p class="news__title">Как лечат кариес на передних зубах</p>
+                                <p class="news__text">По статистике, тщательнее всего мы чистим именно передние зубы
+                                    — резцы и клыки...</p>
+                                <a href="#">Читать больше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news">
+                                <img class="news__poster" src="img/news1.jpg" alt="">
+                                <span class="news__date">20 августа 2019</span>
+                                <p class="news__title">Какую зубную щетку выбрать и не ошибиться?</p>
+                                <p class="news__text">Хорошая зубная щетка - залог чистой гигиенты полости рта...
+                                </p>
+                                <a href="#">Читать больше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news">
+                                <img class="news__poster" src="img/news2.jpg" alt="">
+                                <span class="news__date">19 августа 2019</span>
+                                <p class="news__title">Что делать, если болит зуб после промбирования</p>
+                                <p class="news__text">Обращаясь к стоматологу, вы, естественно, хотите получить
+                                    качественную помощь...
+                                </p>
+                                <a href="#">Читать больше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news">
+                                <img class="news__poster" src="img/news3.jpg" alt="">
+                                <span class="news__date">4 сентября 2019</span>
+                                <p class="news__title">Всё, что вы хотели знать об имплантах</p>
+                                <p class="news__text">Доступно рассказывают высококлассные врачи нашей клиники...
+                                </p>
+                                <a href="#">Читать больше</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container contacts" id="contacts">
+
+            <h2>Контакты</h2>
+            <div class="row">
+                <di class="col-sm col-md-6 col-lg-4 mb-3">
+                    <div class="card card--light contacts__card">
+
+                        <span>Ирина Левченко</span>
+                        <p>Консультант</p>
+                        <a class="icon icon--phone contacts__field" href="tel:+7(495)5653155">+7 (495) 565 31 55</a>
+                        <a href="mailto:DentIren@gmail.ru" class="icon icon--mail contacts__field">DentIren@gmail.ru</a>
+
+                    </div>
+                </di>
+                <div class="col-sm col-md-6 col-lg-4 mb-3">
+                    <div class="card card--light contacts__card">
+
+                        <span>Арина Романова</span>
+                        <p>Секретарь</p>
+                        <a class="icon icon--phone contacts__field" href="tel:+7(495)7653376">+7 (495) 765 33 76 </a>
+                        <a href="mailto:DentManager@gmail.ru"
+                            class="icon icon--mail contacts__field">DentManager@gmail.ru</a>
+
+                    </div>
+                </div>
+                <div class="col-sm  col-lg-4 mb-3  contacts__map">
+                    <a href="https://yandex.ru/maps/-/CCQhvABNTC" class="button contacts__btn">Показать на карте</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 footer__left">
+                    <img src="img/logo.svg" alt="Dent">
+                    <div class="footer__schedule">
+                        <span>Будни: с 9:00 до 21:00
+                        </span>
+                        <span>
+                            Суббота: с 10:00 до 20:00
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 footer__right">
+                    <nav class="row nav footer__nav">
+                        <a class="col-4" href="#services">Услуги</a>
+                        <a class="col-4" href="#doctors">Врачи</a>
+                        <a class="col-4" href="#about">О клинике</a>
+                        <a class="col-4" href="#stocks">Акции</a>
+                        <a class="col-4" href="#blog">Блог</a>
+                        <a class="col-4" href="#contacts">Контакты</a>
+                    </nav>
+                    <div class="footer__tel">
+                        <a href="tel:+7(495)765-33-76">+7 (495) 765-33-76</a>
+                        <a href="tel:+7(495)588-22-31">+7 (495) 588-22-31</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Москва, улица Баумана 49, подъезд 3, офис V</p>
+                <p>2020. DENT. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade call-modal" id="callModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Запись на прием</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Консультант нашей клиники с радостью ответит на все вопросы и запишет к нужному специалисту.</p>
+                    <form>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-3 col-form-label">Вас зовут:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="name" name="name"
+                                   placeholder="Иван Иванов">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-3 col-form-label">Ваш номер:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="phone" name="phone"  placeholder="+7 (xxx) xxx-xx-xx" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="button ">Отправить</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

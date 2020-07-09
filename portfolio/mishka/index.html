@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishka</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=6aad49b6-8677-4c7c-90ce-c65403413dab&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__bar">
+            <button class="header__toggle">Меню</button>
+            <nav class="header__nav">
+                <p class="header__item">
+                    <a href="catalog.html" class="link header__link">Каталог товаров</a>
+                    </li>
+                    <p class="header__item">
+                        <a href="form.html" class="link header__link">Вязание на заказ</a>
+                    </p>
+            </nav>
+            <a class="header__logo">
+                <picture>
+                    <source media="(min-width: 1050px)" srcset="img/logo.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tabl.svg">
+                    <img src="img/logo-mob.svg" alt="Mishka">
+            </a>
+            </picture>
+            <ul class="header__user user">
+                <li class="user__item">
+                    <button class="link user__btn user__btn--search">
+                        <svg class="user__icon user__icon--search" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                        <span class="user__site-search">Поиск по сайту</span>
+                    </button>
+                    <input type="text" class="user__input">
+                </li>
+                <li class="user__item">
+                    <a href="#" class="link user__btn user__btn--cart">
+                        <svg class="user__icon user__icon--cart" width="21" height="18">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        Корзина:<span class="user__cart-content">пока&nbspпуста</span>
+                    </a>
+                </li>
+            </ul>
+            <nav class="header__bottom">
+                <a href="#" class="link header__additional">Новые поступления</a>
+                <a href="#" class="link header__additional">Распродажа</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro__top">
+                <div class="container">
+                    <h1 class="intro__title">Милые штуки ручной<br> работы для дома</h1>
+                </div>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/top-desk.jpg">
+                    <img src="img/top-mob.jpg" alt="Милые штуки ручной работы для дома" class="intro__img">
+                </picture>
+            </div>
+            <div class="intro__bar">
+                <a href="#" class="intro__part intro__part--decorations">Предметы<br> интерьера
+                    <svg width="40" height="62">
+                        <use xlink:href="img/sprite-main.svg#decoration"></use>
+                    </svg>
+                </a>
+                <a href="#" class="intro__part intro__part--toys">Детские<br> игрушки
+                    <svg width="60" height="60">
+                        <use xlink:href="img/sprite-main.svg#toy"></use>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="featured">
+            <div class="container featured__container">
+                <div class="featured__sign"><em>Товар <br>недели</em></div>
+                <div class="featured__card">
+                    <h2 class="featured__title">Вязаные корзинки</h2>
+                    <div class="featured__descr">
+                        <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
+                            и
+                            трех размерах.</p>
+                        <dl class="featured__charact">
+                            <div class="featured__row">
+                                <dt>Цвет:</dt>
+                                <dd>«Тиффани»/серый</dd>
+                            </div>
+                            <div class="featured__row">
+                                <dt>Диаметр:</dt>
+                                <dd>25 см</dd>
+                            </div>
+                            <div class="featured__row">
+                                <dt>Высота:</dt>
+                                <dd>15 см</dd>
+                            </div>
+                        </dl>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/feature-desk.jpg">
+                            <img src="img/feature-mob.jpg" alt="Вязанные корзинки" class="featured__img">
+                        </picture>
+                        <span class="featured__price">Цена: 990 руб.</span>
+                        <button type="button" id="to-cart" class="featured__btn btn">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2 class="about__title">Коротко о нас:</h2>
+            <ul class="about__list">
+                <li class="about__item about__item--flower">Экологически<br> чистые материалы</li>
+                <li class="about__item about__item--banknot">Скандинавский стиль<br> по российской цене</li>
+                <li class="about__item about__item--heart">Увеличивает лайки<br> на фотографиях</li>
+                <li class="about__item about__item--ball">Связано вручную<br> с любовью и умилением</li>
+                <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
+                <li class="about__item about__item--gift">Поставляется в <br> подарочной упаковке</li>
+            </ul>
+        </section>
+
+        <section class="feedback">
+            <div class="container feedback__container">
+                <h2 class="feedback__title">Отзывы</h2>
+                <div class="slider feedback__slider">
+                    <div class="slider__slides">
+                        <div class="slider__slide">
+                            <p class="slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
+                                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
+                                игрушек в
+                                Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                            <span class="slider__author">Анастасия Красильникова</span>
+                            <span class="slider__if">@misssssiskras</span>
+                        </div>
+                        <div class="slider__slide">
+                            <p class="slider__text">Рыбатекст используется дизайнерами, проектировщиками и
+                                фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. </p>
+                            <p class="slider__text">C помощью этого онлайн-генератора рыботекста можно пачками плодить
+                                как отдельные предложения, так и целые абзацы отменнейшего рыбы-текста.</p>
+                            <span class="slider__author">Игорь Ялычев</span>
+                            <span class="slider__if">@rondo237</span>
+                        </div>
+                        <div class="slider__slide">
+                            <p class="slider__text">Повседневная практика показывает, что дальнейшее развитие различных
+                                форм деятельности в значительной степени обуславливает создание новых предложений.
+                                К чему это? Я не знаю
+                            </p>
+                            <span class="slider__author">Кристина Соборенко</span>
+                            <span class="slider__if">@kittycat</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slider__controls controls">
+                        <button class="controls__btn controls__btn--prev">Предыдущий
+                            <svg class="contols__arrow" width="50" height="26">
+                                <use xlink:href="img/sprite-main.svg#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="controls__btn controls__btn--next">Следующий
+                            <svg class="contols__arrow" width="50" height="26">
+                                <use xlink:href="img/sprite-main.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="feedback__send-btn btn">Написать</button>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <div class="contacts__info">
+                        <div class="contacts__line">
+                            <span class="contacts__type">e-mail:</span>
+                            <a href="mailto:info@mimimishkashop.ru"
+                                class="contacts__value contacts__value--email">info@mimimishkashop.ru</a>
+                        </div>
+                        <div class="contacts__line">
+                            <span class="contacts__type">адрес:</span>
+                            <span class="contacts__value contacts__value--adr">г. Санкт-Петербург,<br>
+                                ул. Большая Конюшенная, <br>
+                                д. 19/8, офис 101</span>
+                        </div>
+                    </div>
+                </div>
+                <button type="btn" class="contacts__write-btn btn">Напишите нам</button>
+            </div>
+            <div id="map" class="contacts__map"></div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="footer__logo"><img src="img/logo-small.svg" alt="Mishka" width="102" height="34"></a>
+            <ul class="footer__social social">
+                <li>
+                    <a href="#" class="social__item">
+                        <svg class="social__icon" width="22" height="21">
+                            <use xlink:href="img/sprite.svg#icon-inst"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social__item">
+                        <svg class="social__icon" width="15" height="28">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social__item">
+                        <svg class="social__icon" width="23" height="20">
+                            <use xlink:href="img/sprite.svg#icon-twit"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="footer__rights">Разработано
+                <svg class="footer__academy" width="27" height="34">
+                    <use xlink:href="img/sprite.svg#icon-academy"></use>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <div class="modal modal--cart">
+        <div class="container">
+            <form action="#" class="modal__form">
+                <h3 class="modal__title">Добавить<br> в корзину</h3>
+                <p class="modal__descr">Выберите размер:</p>
+                <div class="modal__sizes">
+                    <input type="radio" name="size" id="s" class="modal__radio" checked>
+                    <label for="s" class="modal__size" tabindex="">S</label>
+                    <input type="radio" name="size" id="m" class="modal__radio">
+                    <label for="m" class="modal__size">M</label>
+                    <input type="radio" name="size" id="l" class="modal__radio">
+                    <label for="l" class="modal__size">L</label>
+                </div>
+                <button type="button" class="btn modal__btn">Добавить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal__bg"></div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>
